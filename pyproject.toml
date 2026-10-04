@@ -1,0 +1,26 @@
+[project]
+name = "mojo-utm"
+version = "0.1.0"
+description = "The utm package's WGS84 <-> UTM conversion, implemented in Mojo"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Lee Penkman <leepenkman@gmail.com>" }]
+keywords = ["mojo", "utm", "wgs84", "gis", "coordinates", "performance"]
+dependencies = ["numpy"]
+
+[project.optional-dependencies]
+dev = ["pytest", "utm"]
+
+[project.urls]
+Homepage = "https://github.com/lee101/mojo-utm"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = { "" = "python" }
+
+[tool.setuptools.packages.find]
+where = ["python"]
